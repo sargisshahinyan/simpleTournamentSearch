@@ -9,7 +9,7 @@ export default (state = initialState, { type, payload }) => {
     case SET_TOURNAMENTS:
       return {
         ...state,
-        tournaments: payload,
+        list: payload,
       };
     default:
       return state;

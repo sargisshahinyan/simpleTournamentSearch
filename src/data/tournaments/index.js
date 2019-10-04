@@ -1,5 +1,5 @@
 export function getInitialState() {
   return {
-    tournaments: [],
+    list: [],
   };
 }
