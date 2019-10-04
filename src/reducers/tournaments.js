@@ -4,14 +4,14 @@ import { getInitialState } from '../data/tournaments';
 
 const initialState = getInitialState();
 
-export default (store = initialState, { type, payload }) => {
+export default (state = initialState, { type, payload }) => {
   switch (type) {
     case SET_TOURNAMENTS:
       return {
-        ...store,
+        ...state,
         tournaments: payload,
       };
     default:
-      return store;
+      return state;
   }
 }
