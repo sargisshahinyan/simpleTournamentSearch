@@ -6,11 +6,11 @@ import TournamentCard from '../TournamentCard';
 export const SearchResult = memo(({ tournaments }) => {
   return (
     <ul className="list-group">
-      {tournaments.map(({ id, ...data }) => (
+      {tournaments.map((tournament) => (
         <TournamentCard
-          key={id}
-          id={id}
-          {...data}
+          key={tournament.id}
+          tournament={tournament}
+          searchResult
         />
       ))}
     </ul>

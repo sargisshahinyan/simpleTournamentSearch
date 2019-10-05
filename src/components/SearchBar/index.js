@@ -33,6 +33,7 @@ export class SearchBar extends PureComponent {
           placeholder="Tournaments"
           value={searchBarValue}
           onChange={this.setSearchBarValue}
+          onFocus={this.setSearchBarValue}
         />
       </div>
     );
