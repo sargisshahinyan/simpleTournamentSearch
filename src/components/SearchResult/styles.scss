@@ -1,0 +1,11 @@
+.search-result {
+  position: relative;
+  height: 100px;
+  z-index: 1;
+  .list-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

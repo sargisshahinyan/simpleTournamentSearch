@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 
 import TournamentCard from '../TournamentCard';
 
-export const SearchResult = memo(({ tournaments }) => {
-  return (
+import './styles.scss';
+
+export const SearchResult = memo(({ tournaments }) => (
+  <div className="search-result">
     <ul className="list-group">
       {tournaments.map((tournament) => (
         <TournamentCard
@@ -14,8 +16,8 @@ export const SearchResult = memo(({ tournaments }) => {
         />
       ))}
     </ul>
-  )
-});
+  </div>
+));
 
 function mapToStateProps(state) {
   const { tournaments: { list: tournaments } } = state;
