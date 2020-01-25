@@ -20,4 +20,4 @@ export const loadTournaments = q => (
   }
 );
 
-export const resetTournaments = _ => dispatch => dispatch(setTournaments([]));
+export const resetTournaments = _ => setTournaments([]);
